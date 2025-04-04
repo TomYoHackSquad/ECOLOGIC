@@ -1,11 +1,370 @@
-<!DOCTYPE html>
+
 <html>
+    <head>
+        <title>Ecologic</title>
+    </head>
+    <style>
+      * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    width: 430px;
+    height: 932px;
+    background: linear-gradient(0.25deg, #FFFFFF 57.33%, #FFFFFF 101.39%);
+    border: 5px solid rgba(153, 113, 113, 0.5);
+    border-radius: 65px;
+}
+
+/* ECOLOGIC Title */
+h1 {
+    position: absolute;
+    width: 195px;
+    height: 76px;
+    left: calc(50% - 195px/2 - 0.5px);
+    top: 111px;
+    font-family: 'Saira SemiCondensed', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 76px;
+    text-align: center;
+    color: #000000;
+}
+.subtitle {
+    position: absolute;
+    width: 262px;
+    height: 27px;
+    left: calc(50% - 262px/2 - 1px);
+    top: 208px;
+    font-family: 'Sansation', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+    text-align: center;
+    color: #000000;
+}
+.ikhe {
+    position: absolute;
+    width: 249px;
+    height: 63px;
+    left: calc(50% - 249px/2 - 0.5px);
+    top: 710px;
+    background: #2A74AD;
+    border-radius: 20px;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 40px;
+    cursor: pointer;
+    border: none;
+}
+.munkh {
+    position: absolute;
+    width: 249px;
+    height: 63px;
+    left: calc(50% - 249px/2 - 0.5px);
+    top: 789px;
+    background: #143653;
+    border-radius: 20px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 45px;
+    cursor: pointer;
+    border: none;
+}
+ img{
+    position: absolute;
+    width: 332px;
+    height: 498px;
+    left: 48px;
+    top: 256px;
+    background: url(image.png), url(image.png);
+}
+
+.maral {
+    position: absolute;
+    width: 58px;
+    height: 34px;
+    left: 265px;
+    top: 46px;
+    background: #143653;
+    border-radius: 10px;
+    font-family: 'Saira SemiCondensed', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 31px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+}
+
+.bmi {
+    position: absolute;
+    width: 67px;
+    height: 34px;
+    left: 325px;
+    top: 47px;
+    background: #5993B5;
+    border-radius: 10px;
+    font-family: 'Saira SemiCondensed', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 31px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+}
+.custom-btn {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: calc(50% - 100px);
+    top: 870px;
+    background: #FF6600;
+    border-radius: 15px;
+    font-family: 'Saira SemiCondensed', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+}  
+    </style>
+    <body>
+        <h1>Ecologic</h1>
+        <p class="subtitle"><b>Science Class Assistant</b></p>
+        <p class="ikhe"><b>Log in</b></p>
+        <p class="munkh"><a href="file:///C:/Users/Tomyo-Notebook14/OneDrive/hanigame/ecologic1.html"><b>Sign up</b></a></p>
+        <img src="C:\Users\Tomyo-Notebook14\Downloads\mascot.png">
+        <p class="maral"><b>Mon</b></p>
+        <p class="bmi"><b>Eng</b></p>
+    </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>My First HTML Page</title>
+  <meta charset="UTF-8">
+  <title>Sign Up Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .wrapper {
+      position: relative;
+      width: 430px;
+      height: 932px;
+      margin: 0 auto;
+      background: linear-gradient(0.25deg, #FFFFFF 57.33%, #FFFFFF 101.39%);
+      border: 5px solid rgba(153, 113, 113, 0.5);
+      border-radius: 65px;
+      overflow: hidden;
+    }
+
+    .title {
+      position: absolute;
+      width: 195px;
+      height: 76px;
+      left: calc(50% - 195px / 2 - 0.5px);
+      top: 92px;
+      font-family: 'Saira SemiCondensed', sans-serif;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 76px;
+      text-align: center;
+      color: #243F50;
+    }
+
+    .back-arrow {
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      left: 43px;
+      top: calc(50% - 32px/2 - 374px);
+      background: url('arrow-icon.svg') no-repeat center;
+      background-size: contain;
+    }
+
+    .input-group {
+      position: absolute;
+      width: 345px;
+      height: 60px;
+      background: #FFFFFF;
+      border: 4px solid #F8F8F8;
+      border-radius: 19px;
+      display: flex;
+      align-items: center;
+      padding: 0 15px;
+    }
+
+    .input-group input {
+      width: 100%;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      font-family: 'Montserrat Alternates', sans-serif;
+      color: #333;
+      background: transparent;
+    }
+
+    .input-school { top: 283px; left: calc(50% - 345px/2 + 3.5px); }
+    .input-name { top: 404px; left: calc(50% - 345px/2 + 0.5px); }
+    .input-password { top: 513px; left: calc(50% - 345px/2 + 3.5px); }
+
+    .label {
+      position: absolute;
+      font-family: 'Montserrat Alternates', sans-serif;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 37px;
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+    .label-school { width: 106px; left: calc(50% - 106px / 2 - 97px); top: 299px; }
+    .label-name { width: 224px; left: calc(50% - 224px / 2 - 39px); top: 415px; }
+    .label-password { width: 155px; left: calc(50% - 155px / 2 - 65.5px); top: 525px; }
+
+    .button {
+      position: absolute;
+      width: 345px;
+      height: 60px;
+      left: calc(50% - 345px / 2 - 0.5px);
+      top: 643px;
+      background: #2474AD;
+      border-radius: 19px;
+      cursor: pointer;
+    }
+
+    .button-text {
+      position: absolute;
+      width: 208px;
+      height: 67px;
+      left: calc(50% - 208px / 2);
+      top: 651px;
+      font-family: 'Sansation', sans-serif;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 36px;
+      text-align: center;
+      color: #FFFFFF;
+      pointer-events: none;
+    }
+
+    .alt-signup {
+      position: absolute;
+      width: 277px;
+      height: 67px;
+      left: calc(50% - 277px / 2 - 0.5px);
+      top: 748px;
+      font-family: 'Montserrat Alternates', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #8C8C8C;
+    }
+
+    .image {
+      position: absolute;
+      width: 195px;
+      height: 293px;
+      left: 19px;
+      top: 680px;
+    }
+
+    .social-button {
+      position: absolute;
+      width: 79px;
+      height: 42px;
+      background: #FFFFFF;
+      border: 1px solid #ccc;
+      border-radius: 9px;
+    }
+
+    .google-btn { left: 73px; top: 813px; }
+    .facebook-btn { left: 175px; top: 813px; border-color: #989898; }
+    .twitter-btn { left: 277px; top: 813px; border-color: #999999; }
+
+    .social-icon {
+      position: absolute;
+      width: 29px;
+      height: 29px;
+      top: 819px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .google-icon {
+      left: 99px;
+      background-image: url('google.webp');
+    }
+
+    .facebook-icon {
+      left: calc(50% - 29px/2 - 0.5px);
+      background-image: url('facebook.jpg');
+    }
+
+    .twitter-icon {
+      left: 302px;
+      background-image: url('instagram.webp');
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, World!</h1>
-  <p>This is my first paragraph.</p>
-  <a href="https://www.example.com">Click here</a>
+  <div class="wrapper">
+    <div class="title">Ecologic</div>
+    <div class="back-arrow"></div>
+
+    <!-- School Input -->
+    <div class="input-group input-school">
+      <input type="text" placeholder="Enter your school">
+    </div>
+    <div class="label label-school"></div>
+
+    <!-- Name Input -->
+    <div class="input-group input-name">
+      <input type="text" placeholder="Enter student name">
+    </div>
+    <div class="label label-name"></div>
+
+    <!-- Password Input -->
+    <div class="input-group input-password">
+      <input type="password" placeholder="Enter password">
+    </div>
+    <div class="label label-password"></div>
+
+    <!-- Sign Up Button -->
+    <div class="button"></div>
+    <div class="button-text" <a herf="file:///C:/Users/Tomyo-Notebook14/ecologic2.html">Sign up</a></div>
+
+    <!-- Or sign up with -->
+    <div class="alt-signup">-Or sign up with-</div>
+
+    <!-- Social Buttons -->
+    <div class="social-button google-btn"></div>
+    <div class="social-icon google-icon"></div>
+
+    <div class="social-button facebook-btn"></div>
+    <div class="social-icon facebook-icon"></div>
+
+    <div class="social-button twitter-btn"></div>
+    <div class="social-icon twitter-icon"></div>
+  </div>
 </body>
 </html>
